@@ -31,7 +31,7 @@ class LinkedList:
         
         current = self.head
         while(current):
-            if(current.next.data%2==0):
+            if(current.next and current.next.data%2==0):
                 prev = current
                 current = current.next.next
                 prev.next = current

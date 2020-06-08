@@ -7,7 +7,7 @@ def findDiagonalOrder(matrix):
         result = []
         for i in range(m+n-1):
             temp = []
-            if i < n :
+            if i < m :
                 row, col = 0,i
             else:
                 row, col = i-n+1, n-1
